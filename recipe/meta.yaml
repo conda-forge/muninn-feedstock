@@ -9,14 +9,14 @@ source:
   sha256: 8480302fe37971877b60f3105f9fdf5b7f7b9764f9f2c7e05c22e08fc0444fdf
 
 build:
-  number: 0
+  number: 1
   noarch: python
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
   host:
     - python >=2.6
-    - setuptools
+    - pip
 
   run:
     - libspatialite
