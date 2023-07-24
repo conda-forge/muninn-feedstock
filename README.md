@@ -1,11 +1,11 @@
-About muninn
-============
+About muninn-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/muninn-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/stcorp/muninn
 
 Package license: BSD-3-Clause-Clear
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/muninn-feedstock/blob/main/LICENSE.txt)
 
 Summary: Muninn is a library and a set of command-line tools to create and manage data product catalogues and archives. It can function as a pure product metadata catalogue or it can manage a product archive together with its metadata catalogue.
 
