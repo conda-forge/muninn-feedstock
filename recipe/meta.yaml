@@ -1,4 +1,4 @@
-{% set version = "6.0.1" %}
+{% set version = "6.1" %}
 
 package:
   name: muninn
@@ -6,12 +6,12 @@ package:
 
 source:
   url: https://github.com/stcorp/muninn/archive/{{ version }}.tar.gz
-  sha256: 8480302fe37971877b60f3105f9fdf5b7f7b9764f9f2c7e05c22e08fc0444fdf
+  sha256: 5ba35c7cab321996f9bdafa06561efdc59b45c501b30212557480b5072c62b85
 
 build:
-  number: 2
+  number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - muninn-attach = muninn.tools.attach:main
     - muninn-destroy = muninn.tools.destroy:main
