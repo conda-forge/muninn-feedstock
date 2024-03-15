@@ -1,4 +1,4 @@
-{% set version = "6.3" %}
+{% set version = "6.4" %}
 
 package:
   name: muninn
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/stcorp/muninn/archive/{{ version }}.tar.gz
-  sha256: 496b81d23a3032e89c4b6bea65909ade6992e48deec64e00b3574dc59c90ac34
+  sha256: 6b4b374e7fd62d110b8c03f6992057d4c6f4140f356aa68b706d6e86264e6ec8
 
 build:
   number: 0
@@ -57,5 +57,4 @@ about:
 
 extra:
   recipe-maintainers:
-    - srepmub
     - svniemeijer
