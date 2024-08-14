@@ -1,4 +1,4 @@
-{% set version = "6.4" %}
+{% set version = "6.4.1" %}
 
 package:
   name: muninn
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/stcorp/muninn/archive/{{ version }}.tar.gz
-  sha256: 6b4b374e7fd62d110b8c03f6992057d4c6f4140f356aa68b706d6e86264e6ec8
+  sha256: 7caeb76d24442a6f317f11387f12020c96eb8c74d332ccf64134d5d136a47b7d
 
 build:
   number: 0
