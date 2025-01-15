@@ -9,7 +9,7 @@ source:
   sha256: 7caeb76d24442a6f317f11387f12020c96eb8c74d332ccf64134d5d136a47b7d
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
@@ -33,18 +33,20 @@ build:
 
 requirements:
   host:
-    - python >=2.6
+    - python {{ python_min }}
     - pip
 
   run:
     - libspatialite
     - psycopg2
-    - python >=2.6
+    - python >={{ python_min }}
     - requests
     - tqdm
     - tabulate
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - muninn
 
