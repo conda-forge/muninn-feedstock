@@ -40,31 +40,73 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `muninn` can be installed with `conda`:
+How to use
+----------
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda install muninn
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba install muninn
 ```
 
-It is possible to list all of the versions of `muninn` available on your platform with `conda`:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+# for adding to your local project
+pixi add muninn
+# for installing globally
+pixi global install muninn
+```
+
+</details>
+
+Search package versions
+-----------------------
+
+It is possible to list all of the versions of `muninn` available on your platform:
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda search muninn --channel conda-forge
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba search muninn --channel conda-forge
 ```
 
-Alternatively, `mamba repoquery` may provide more information:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+pixi search muninn --channel conda-forge
+```
+
+</details>
+
+<details>
+<summary>With mamba repoquery, which may provide more information</summary>
 
 ```
 # Search all versions available on your platform:
@@ -76,6 +118,8 @@ mamba repoquery whoneeds muninn --channel conda-forge
 # List dependencies of `muninn`:
 mamba repoquery depends muninn --channel conda-forge
 ```
+
+</details>
 
 
 About conda-forge
